@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+
+}
+.cont{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+    background-color: black;
+    gap: 10px; /* Space between input and button */
+}
+
+input {
+    background-color: black;
+    height: 40px;
+    width: 80%;  /* Make input responsive */
+    max-width: 400px;
+    padding: 0 15px;
+    font-size: 16px; 
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;  /* Ensures padding doesn’t affect width */
+    transition: border 0.3s;
+}
+
+input:focus {
+   
+    outline: none;
+}
+
+button {
+    /* border: 2px solid red; */
+    height: 45px;
+    width: 85px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 17px;
+    /* display: flex;    */
+    /* align-items: center; */
+    /* justify-content: center; */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+button:active {
+    background-color: #003f7f;  /* Even darker on click */
+}
+
+pre {
+     white-space: pre-wrap;  
+        word-wrap: break-word;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+    /* color: #333; */
+    color: white;
+    /* background-color: #f4f4f4; */
+    border-radius: 5px;
+    max-width: 100%;
+}
+p{
+    color: white;
+}
+@media (max-width: 600px) {
+    .cont {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
